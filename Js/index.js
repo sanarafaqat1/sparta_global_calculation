@@ -5,31 +5,32 @@ var myNumber2;
 // var myNumber3;
 
 
-
 var calculation = prompt ("Normal or Advance");
-if (calculation =="Normal")
+if (calculation =="Normal") {
   var Normal = prompt ("Which type of normal calculation will you use");
   myNumber1 =parseInt(prompt("The First number"));
   myNumber2 = parseInt(prompt("The second number"));
-     if (Normal == "+") {
-       console.log(myNumber1 + myNumber2);
-     } else if (Normal == "/") {
-       console.log(myNumber1 / myNumber2);
-     }else if (Normal == "-") {
-       console.log(myNumber1 - myNumber2);
-     }else if (Normal == "%") {
-       console.log(myNumber1 % myNumber2);
-     }else if (Normal == "*") {
-       console.log(myNumber1 * myNumber2);
-     }
-
+ if (Normal == "+") {
+   console.log(myNumber1 + myNumber2);
+ } else if (Normal == "/") {
+   console.log(myNumber1 / myNumber2);
+ }else if (Normal == "-") {
+   console.log(myNumber1 - myNumber2);
+ }else if (Normal == "%") {
+   console.log(myNumber1 % myNumber2);
+ }else if (Normal == "*") {
+   console.log(myNumber1 * myNumber2);
+ }
+}
 //This below is my try at an Advance calculator,
-
-
-  // if (calculation == "advance")
-  //   var advance = prompt ("What type Advance calculation");
-  //   myNumber1 =parseInt(prompt("Intro the first number"));
-  //   myNumber2 = parseInt(prompt("Intro the second number"));
-  //      if (advance == "power") {
-  //        console.log(myNumber3 / myNumber4);
-  //      }
+else if (calculation == "advance") {
+  var advance = prompt ("What type Advance calculation");
+ if (advance == "power") {
+   myNumber3 =parseInt(prompt("Number 1"));
+   myNumber4 = parseInt(prompt("Number 2"));
+   console.log("The Power of:" + Math.pow(myNumber3, myNumber4));
+ } else if (advance == "Squareroot") {
+   myNumber3 =parseInt(prompt("Number 1"));
+   console.log( "The Squareroot is " + Math.sqrt(myNumber3));
+ }
+}
